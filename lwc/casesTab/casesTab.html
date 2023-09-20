@@ -1,0 +1,6 @@
+<template>
+    <lightning-datatable key-field="Id" data={data} columns={columns} hide-checkbox-column="true"
+                 onrowaction={callRowAction}>
+    </lightning-datatable>
+    <c-case-detail-component record-id={caseId} lwc:if={openDetailView} oncloseevent={handleClose}></c-case-detail-component>
+</template>
